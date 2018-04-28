@@ -1,0 +1,255 @@
+@media screen and (min-aspect-ratio: 1/1) {
+    
+    body{
+        max-width: 100vw;
+    }
+
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+    }
+
+    header.container {
+        height: 15vh;
+        background-color: #4d8364;
+    }
+
+    header.container > *{
+        flex-grow: 2;
+    }
+
+    div.menu-top{
+        justify-content: space-evenly;
+        flex-grow: 1;
+    }
+
+    .menu-top-item {
+        color: white;
+        font-family: Montserrat;
+        font-weight: 900;
+        text-transform: uppercase;
+        font-size: 1vmax;
+        height: 5vw;
+        width: 25%;
+    }
+
+    .menu-top-item:hover{
+        color: #65ae84;
+        cursor: pointer;
+    }
+
+    .labmatii-title{
+        color: white;
+        font-family: Montserrat;
+        font-weight: 900;
+        font-size: 2vmax;
+    }
+
+    section.container{
+        justify-content: space-between;
+        color: white;
+        font-family: Montserrat;
+    }
+
+    section.container > *{
+        flex-grow: 1;
+    }
+
+    section h1 {
+        font-weight: 900;
+        font-size: 4vmax;
+    }
+
+    section h3 {
+        font-weight: 900;
+        font-size: 2vmax;
+    }
+
+    div.head-title{
+        color: black;
+        font-family: Montserrat;
+        font-weight: 900;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.head-title-white{
+        color: white;
+        font-family: Montserrat;
+        font-weight: 900;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.head-title h1, div.head-title-white h1{
+        font-size: 2vw;
+        margin-bottom: 1vw;
+    }
+
+    div.head-title hr{
+        width: 40vw;
+    }
+
+    div.techs {
+        flex: none;
+        width: 10vw;
+        border: 1px solid black;
+        height: 60vh;
+    }
+
+    div.techs-menu {
+        flex-grow: 1;
+    }
+
+    div.tech-item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+    }
+
+    i {
+        font-size: 3vw;
+        color: #65ae84;
+    }
+
+    div.area-menu-item {
+        color: #d2d2d2;
+        font-size: 3vw;
+        flex-grow: 1;
+        width: 8vw;
+        height: 13vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.4s;
+    }
+
+    div.area-menu-item:hover{
+        color: #65ae84;
+    }
+
+    div.area-exp {
+        width: 80vw;
+        color: black;
+    }
+
+    div.area-exp h1{
+        font-size: 2vw;
+    }
+
+    div.area-menu {
+        width: 5vw;
+    }
+
+    div.container-area div h1{
+        color: black;
+    }
+
+    div.about-text{
+        width: 25vw;
+    }
+
+    hr.white-hr{
+        border: 1px solid white;
+        width: 40vw;
+    }
+
+    .project{
+        width: 28vw;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 2vw;
+        border: 1px solid black;
+    }
+
+    .project-title{
+        font-family: Lato;
+        font-size: 1vw;
+    }
+
+    .project-foto{
+        width: 100%;
+    }
+
+    .project-description{
+        width: 90%;
+    }
+
+    .project:hover{
+        box-shadow: 0px 5px #65ae84;
+    }
+
+    .container {
+        padding: 5vw;
+        width: 100vw;
+        display: flex;
+    }
+
+    .img-15vw{
+        width: 15vw;
+    }
+
+    .flex{
+        display: flex;
+    }
+
+    .rows{
+        flex-direction: row;
+    }
+
+    .columns {
+        flex-direction: column;
+    }
+
+    .center{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bg-green{
+        background: #65ae84;
+    }
+
+    .bg-white {
+        background: white;
+    }
+
+    .h-85{
+        height: 85vh;
+    }
+
+    .h-100{
+        height: 100vh;
+    }
+
+    .space-b{
+        justify-content: space-between;
+    }
+
+    .no-padding{
+        padding: 0;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a.focus {
+        text-decoration: none;
+    }
+
+    .tech-used{
+        font-size: 2.5vw;
+        margin-right: 1vw;
+    }
+}
