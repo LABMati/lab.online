@@ -17,6 +17,11 @@ for (let i = 0; i < area.toggle.length; i++) {
     })
 }
 
+var team = {}
+team.foto = document.querySelectorAll('img.team-foto')
+team.name = document.querySelectorAll('div.team-name')
+team.net = document.querySelectorAll('div.team-net')
+
 function allGrey() {
     for (let i = 0; i < area.toggle.length; i++) {
         area.toggle[i].style.color = '#d2d2d2'
