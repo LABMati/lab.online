@@ -29,35 +29,63 @@
   <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
   crossorigin="anonymous">
-
+ 
   <!-- Latest compiled and minified CSS -->
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
 
-  <!-- Custom fonts for this template -->
+  <!-- Custom fonts -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
-  <!-- Custom styles for this template -->
+  <!-- Custom styles -->
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/mstyle.css" rel="stylesheet">
   <link href="css/margin.css" rel="stylesheet">
 
 </head>
 
 <body>
 
-  <header class="container center">
+  <header id="head" class="container center">
+    <div class="side-menu-m-trigger">
+      <i class="fas fa-bars"></i>
+    </div>
     <div class="labmatii-title flex center">LABMAT(I)²</div>
     <div class="menu-top flex">
-      <a href="#container-area"><div class="menu-top-item flex center">Áreas</div></a>
-      <a href="#container-area"><div class="menu-top-item flex center">Sobre</div></a>
-      <a href="#container-area"><div class="menu-top-item flex center">Projetos</div></a>
-      <a href="#container-area"><div class="menu-top-item flex center">Contato</div></a>
+      <a class="js-scroll-trigger" href="#areas"><div class="menu-top-item flex center">Áreas</div></a>
+      <a class="js-scroll-trigger" href="#about"><div class="menu-top-item flex center">Sobre</div></a>
+      <a class="js-scroll-trigger" href="#projects"><div class="menu-top-item flex center">Projetos</div></a>
+      <a class="js-scroll-trigger" href="#contact"><div class="menu-top-item flex center">Contato</div></a>
     </div>
   </header>
 
-  <section class="container h-85 bg-green center columns">
+
+  <a class="js-scroll-trigger" href="#head">
+    <aside class="side-menu">
+      <i class="fas fa-chevron-up"></i>
+    </aside>
+  </a>
+
+  <aside class="side-menu-m">
+    <a class="menu-side" href="#areas">
+      <div class="menu-top-item flex center">Áreas</div>
+    </a>
+    <a class="menu-side" href="#about">
+      <div class="menu-top-item flex center">Sobre</div>
+    </a>
+    <a class="menu-side" href="#mobile-projects">
+      <div class="menu-top-item flex center">Projetos</div>
+    </a>
+    <a class="menu-side" href="#contact">
+      <div class="menu-top-item flex center">Contato</div>
+    </a>
+  </aside>
+
+  <aside class="shadow"></aside>
+  
+  <section id="main" class="container h-85 bg-green center columns">
     <div class="flex center">
       <img class="img-15vw" src="img/lablogo.png">
     </div>
@@ -66,7 +94,7 @@
     </div>
   </section>
 
-  <section class="container mh-100 bg-white center columns no-padding" id="container-area">
+  <section id='areas' class="container mh-100 bg-white center columns no-padding" id="container-area">
     <div class="head-title mt-10">
       <h1>ÁREAS DE ATUAÇÃO</h1>
       <hr>
@@ -101,7 +129,7 @@
     </div>
   </section>
 
-  <section class="container h-100 bg-green center columns">
+  <section id="about" class="container h-100 bg-green center columns">
     <div class="head-title-white">
       <h1>SOBRE</h1>
       <hr class="white-hr">
@@ -119,8 +147,56 @@
     </div>
   </section>
 
+  <section id="mobile-projects" class="container mh-100 bg-white center columns">
+    <div class="head-title">
+      <h1>PROJETOS</h1>
+      <hr>
+    </div>
+    <div class="container center columns">
+      <div class="project-mobile container columns center">
+        <div class="project-foto-mobile mb-2">
+          <img src="img/project-3.png"> 
+        </div>
+        <div class="project-body container columns center">
+          <div class="project-title-mobile mb-3">Limpa Pendrive</div>
+          <div class="project-description-mobile">
+            <p class="mb-3">Este projeto foi desenvolvido como uma continuação ao Projeto Fênix, no ano de 2011. Utilizando-se de hardware doado pela
+              Polícia Federal, o laboraótio construiu uma estação para a limpeza de pendrives que possuíam malwares.
+            </p>
+            <p>Plataforma: Totem Linux</p>
+          </div>
+        </div>
+      </div>
+      <div class="project-mobile container columns center">
+        <div class="project-foto-mobile mb-2">
+          <img src="img/project-1.png">
+        </div>
+        <div class="project-body container columns center">
+          <div class="project-title-mobile mb-3">Guia de Bolso IFC</div>
+          <div class="project-description-mobile">
+            <p class="mb-3">Em forma de aplicação mobile, o intuito é portar as funcionalidades do site institucional e portal do aluno em um ambiente
+              só, padronizado e consistente. O aplicativo está em fase de testes e em breve será lançado para o público.</p>
+            <p>Plataforma: Android.</p>
+          </div>
+        </div>
+      </div>
+      <div class="project-mobile container columns center">
+        <div class="project-foto-mobile mb-2">
+          <img src="img/project-2.png">
+        </div>
+        <div class="project-body container columns center">
+          <div class="project-title-mobile mb-3">Grafsoft</div>
+          <div class="project-description-mobile">
+            <p class="mb-3">Com o objetivo de ajudar gestores do IFC a criar, expor e visualizar gráficos institucionais juntamente com um banco de dados
+              integrado ao IFC, o Grafsoft é uma iniciativa ainda em fase de planejamento.</p>
+            <p class="">Plataforma: Desktop</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <section class="container h-100 bg-white center columns">
+  <section id="projects" class="container h-100 bg-white center columns">
     <div class="head-title">
       <h1>PROJETOS</h1>
       <hr>
@@ -159,17 +235,18 @@
     </div>
   </section>
 
-  <section class="container columns mh-100 bg-green">
+  <section id="contact" class="container columns mh-100 bg-green">
     <div class="head-title-white">
       <h1>CONTATO</h1>
       <hr class="white-hr">
     </div>
     <form class="container columns center">
+      <p class='small-input'>Entre em contato com o LABMat(i)², responderemos todas as suas dúvidas sobre nós e angústias da vida moderna.</p>
       <div class="container columns center">
-        <input class="input-custom" type="text" placeholder="Nome">
-        <input class="input-custom" type="email" placeholder="E-mail">
+        <input required class="input-custom" type="text" placeholder="Nome*">
+        <input required class="input-custom" type="email" placeholder="E-mail*">
         <input class="input-custom" type="text" placeholder="Telefone">
-        <input class="input-custom input-textarea" type="textarea" placeholder="Mensagem">
+        <input required class="input-custom input-textarea" type="textarea" placeholder="Mensagem*">
         <div class="container">
           <button class="button-form">Enviar</button>
         </div>
@@ -177,7 +254,7 @@
     </form>
   </section>
 
-  <section class="container columns mh-100 bg-white">
+  <section id="team" class="container columns mh-100 bg-white">
     <div class="head-title">
       <h1>EQUIPE</h1>
       <hr class="hr">
@@ -244,6 +321,8 @@
 
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  
+  <!-- Custom Scripts -->
   <script src="js/main.js"></script>
 
 </body>
